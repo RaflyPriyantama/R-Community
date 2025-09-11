@@ -400,48 +400,43 @@
             border-top: 1px solid rgba(255,255,255,0.1);
         }
         
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .mobile-menu {
-                display: block;
-            }
-            
+        /* Tablet (max 1024px) */
+        @media (max-width: 1024px) {
             .hero h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
-            
+            .hero p {
+                font-size: 1rem;
+            }
             .about-content {
                 grid-template-columns: 1fr;
+                text-align: center;
             }
-            
             .about-text {
                 padding-right: 0;
             }
-            
-            .timeline:before {
-                left: 31px;
+        }
+        /* HP Kecil (max 480px) */
+        @media (max-width: 480px) {
+            .navbar {
+                padding: 0.8rem 1rem;
             }
-            
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
+            .hero {
+                height: 70vh;
+                padding: 0 1rem;
             }
-            
-            .timeline-item:nth-child(even) {
-                left: 0;
+            .hero h1 {
+                font-size: 1.8rem;
             }
-            
-            .timeline-item:after {
-                left: 21px;
+            .hero p {
+                font-size: 0.9rem;
             }
-            
-            .timeline-item:nth-child(even):after {
-                left: 21px;
+            .btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+            .materials-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
